@@ -4,7 +4,7 @@ We will use artificial intelligence to predict whether somebody is on track to p
 
 ### Contributors
 
-Stan (stanbsky) - Data science / tbd.
-Morgan (morgs5656) - Data science / tbd.
-Charlie (scxr) - Backend/Data science
+Stan (stanbsky) - Data science / tbd.\
+Morgan (morgs5656) - Data science / tbd.\
+Charlie (scxr) - Backend/Data science\
 Harsh (harshonyou) Frontend
