@@ -31,7 +31,6 @@ while 1:
                 account_amounts[resp["transactions"][i]["account_id"]] = account_amounts[resp["transactions"][i]["account_id"]] + resp["transactions"][i]["amount"]
             else:
                 account_amounts[resp["transactions"][i]["account_id"]] = resp["transactions"][i]["amount"]
-        pprint(account_amounts)
         month_select -=1
         if month_select <=1:
             year_select -=1
@@ -45,7 +44,7 @@ while 1:
         else:
             year_amount += amount_month
             count +=1
-        if year_select == 2016:
+        if year_select == 2017:
             #only select data up to 2016
             exit()
     except plaid.errors.ItemError:
