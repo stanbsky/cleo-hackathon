@@ -3,7 +3,7 @@
 {% for key, values in allPrices.items() %}
   {% for k, val in allPrices[key].items() %}
     <p> Store : {{key}} </p>
-    <p> Product name : {{k}} </p>
+      <p> Product name : {{k}} </p>
     <p> Product price : {{val['price']}} </p>
     <img src="{{val['image']}}">
   {% endfor %}

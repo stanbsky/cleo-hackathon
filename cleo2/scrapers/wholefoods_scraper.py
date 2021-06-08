@@ -1,3 +1,7 @@
+"""
+NOT USED IN FINAL CODEBASE DUE TO WEIRD RENDERING
+"""
+
 import requests
 from bs4 import BeautifulSoup
 import urllib
