@@ -26,7 +26,7 @@ async def get_prices(request:Request):
     cheapest = sorted(allPrices, key=lambda x: allPrices[x]['price']) # get the keys with lowest price
     to_return = ''
     for val in cheapest[0:5]: # top 5 cheapest!
-        to_return += f'Name: {val}<br>Price : {allPrices[val]["price"]}, Store : {allPrices[val]["store"]}, <br><a href="{allPrices[val]["link"]}" target="_blank">Click me to go to the product!</a><br>"' # return html to present
+        to_return += f'Name: {val}<br>Price : £{allPrices[val]["price"]}, Store : {allPrices[val]["store"]}, <br><a href="{allPrices[val]["link"]}" target="_blank">Click me to go to the product!</a><br>"' # return html to present
     return {"content":to_return}
 
 uvicorn.run(app)

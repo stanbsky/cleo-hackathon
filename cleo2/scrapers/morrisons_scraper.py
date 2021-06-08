@@ -1,3 +1,8 @@
+"""
+NOT USED IN FINAL CODEBASE DUE TO WEIRD RENDERING
+"""
+
+
 import requests
 from bs4 import BeautifulSoup
 import urllib
@@ -27,9 +32,13 @@ def scrape_morrisons(product_name:str) -> dict:
             product_price = obj.find_all("span", {"class":"fop-price"})[0].text
             product_image = obj.find_all("img",{"class":"fop-img"})
             image_url = "https://groceries.morrisons.com/" + product_image[0]["src"]
-
+            price_to_send = 0
+            if product_price[-1] == 'p':
+                price_to_send = float(product_price[:-1])
+            else:
+                price_to_send = float(product_price[1:])
             items[str(product_name[0].text)] = {
-                "price":float(product_price[1:]),
+                "price":price_to_send,
                 "image":image_url,
                 "store":"Morrisons",
                 "link":"https://groceries.morrisons.com"+link
