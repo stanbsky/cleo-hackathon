@@ -26,7 +26,8 @@ def scrape_morrisons(product_name:str) -> dict:
             image_url = "https://groceries.morrisons.com/" + product_image[0]["src"]
             items[str(product_name[0].text)] = {
                 "price":product_price,
-                "image":image_url
+                "image":image_url,
+                "store":"Morrisons"
             }
     sorted(items, key=lambda x: items[x]['price'])
     return items
