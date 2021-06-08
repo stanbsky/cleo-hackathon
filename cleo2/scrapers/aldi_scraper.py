@@ -1,6 +1,5 @@
 import requests
 import bs4
-import pandas as pd
 import urllib
 from pprint import pprint
 from bs4 import BeautifulSoup

@@ -36,4 +36,4 @@ async def get_prices(request:Request):
     #ßeturn allPrices["Moririsons"][0:5]
     #return templates.TemplateResponse("prices_view.html", {"request":request, "allPrices":allPrices})
 
-uvicorn.run(app)
+uvicorn.run(app, port=4444)

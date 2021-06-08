@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import urllib
 from pprint import pprint
+import json
 def scrape_morrisons(product_name:str) -> dict:
     items = {}
     base_url = 'https://groceries.morrisons.com/search?entry=%s&sort=PRICE_ASC'
