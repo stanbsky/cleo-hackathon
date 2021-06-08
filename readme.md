@@ -17,7 +17,7 @@ Please refer to [cleo2/requirements.txt](https://github.com/stanbsky/cleo-hackat
 
 ## Conclusion
 
-Given this was started about halfway through the hackathon due to the struggles mentioned about the original idea below I think it went very well. I think given what it does the speed is incredible, it is extremely beneficial for anyone that does grocery shopping (most people) and is a great little tool. Given more time I would clean up the frontend as there are some visual issues with it (not major) and add more places to scrape from.
+Given this was started about halfway through the hackathon due to the struggles mentioned about the original idea [below](https://github.com/stanbsky/cleo-hackathon#what-went-wrong) we think it went very well. We have given our best and the speed was incredible as well, it is extremely beneficial for anyone that does not only grocery shopping (most people) but also any type of online shopping and is a great little tool. Given more time we would have cleaned up the frontend as there are some visual issues with it (not major) and add more places to scrape from.
 
 ## Screenshot(s)
 
