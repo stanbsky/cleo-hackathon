@@ -1,0 +1,5 @@
+{% for key, values in prices.items() %}
+  <p> Product name : {{key}} </p>
+  <p> Product price : {{values['price']}} </p>
+  <img src="{{values['image']}}">
+{% endfor %}
