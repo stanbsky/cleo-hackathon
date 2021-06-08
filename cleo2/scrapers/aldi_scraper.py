@@ -30,7 +30,7 @@ def scrape_aldi(product_name):
 
         if og_product_name in product_name.lower() and product_json['stateKey'] == 'instore.available':
             items[product_name] = {
-                "price" : f"£{product_price}",
+                "price" : product_price,
                 "image" : image_src,
                 "store" : "Aldi"
             }
