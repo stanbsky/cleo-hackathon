@@ -10,7 +10,7 @@
 
 ## Screenshot(s)
 
-![The Final Product](https://raw.githubusercontent.com/stanbsky/cleo-hackathon/master/screenshots/core-project.png?token=AFMBBATI4OCSTBOTUL4RULTAX56MS)
+![The Final Product](https://i.snipboard.io/NfKU6e.jpg)
 
 # Directory
 
