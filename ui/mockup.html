@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="mockup.css" />
+</head>
+<body>
+    <section class="hero is-info is-fullheight is-bold is-centered">
+        <div class="hero-body">
+            <div class="container">
+                <div id="mockChat"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script src="mockup.js"></script> -->
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            mockChat.init({
+                id: "mockChat",
+                data: ["Bonjour, souhaitez-vous me parler ?", "Oui, j'aimerais savoir ou se situe votre hôtel.", "Nous au 20 avenue Jean Michel dans le 6e arrondissement de Marseille.", "Merci !", "A votre service 🙂"],
+                loop: true,
+                delay: 1000, // Delay between messages
+                startDelay: 1200, // Delay before starting the animation
+                restartDelay: 3000, // Delay before restarting the animation if loop is set to true
+                loop: true, // Loop the animation
+            });
+
+        })
+    </script> -->
+    <script>
+        let mockChatContainer = document.querySelector('#' + 'mockChat')
+        mockChatContainer.innerHTML = `
+            <div class="device">
+                <div class="screen">
+                    <div class="app">
+                    </div>
+                </div>
+            </div>
+        `
+        mockChatContainer.classList.add('mockchat')
+        let replyDots = function () {
+                const dot1 = document.createElement('span')
+                const dot2 = document.createElement('span')
+                const dot3 = document.createElement('span')
+                let el = document.createElement('div')
+                el.appendChild(dot1)
+                el.appendChild(dot2)
+                el.appendChild(dot3)
+                el.classList.add('dots', 'reply')
+                return el
+            }
+        let reply = function (content) {
+                let el = document.createElement('div')
+                let text = document.createTextNode(content)
+                el.classList.add('reply')
+                el.appendChild(text)
+                return el
+            }
+        let params = {
+                id: 'mockChat',
+                data: ['Hmm... It looks like there is no data to display'],
+                delay: 1300,
+                startDelay:1050,
+                restartDelay:2000,
+                loop: true,
+            }
+        const chatScreen = mockChatContainer.querySelector('.app');
+            function draw(data) {
+                chatScreen.innerHTML = ''
+                chatScreen.appendChild(replyDots());
+                setTimeout(function () {
+                    chatScreen.innerHTML = ''
+                }, params.startDelay)
+                for (i = 0; i < data.length; i++) {
+                    let key = i;
+                    setTimeout(function () {
+                        chatScreen.appendChild(reply(data[key]));
+                    }, params.startDelay + i * params.delay)
+                }
+            }
+        draw(['nice'])
+
+    </script>
+</body>
+</html>
