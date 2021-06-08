@@ -22,6 +22,9 @@ def scrape_aldi(product_name):
     soup = BeautifulSoup(r.text)
     prices = soup.find_all("div", {"class":"hover-item category-item js-category-item"})
     for obj in prices:
+        az = obj.find_all("a")
+        link = az[1]['href']
+        print(link)
         product_name = obj.find_all("span", {"class":"hidden gtm-product-data"})
         product_json = json.loads(product_name[0].text)
         product_name = product_json['name']
@@ -32,9 +35,11 @@ def scrape_aldi(product_name):
             items[product_name] = {
                 "price" : product_price,
                 "image" : image_src,
-                "store" : "Aldi"
+                "store" : "Aldi",
+                "link": "https://www.aldi.co.uk" + link
             }
         else:
             print(product_name)
 
     return items
+print(scrape_aldi("oil"))

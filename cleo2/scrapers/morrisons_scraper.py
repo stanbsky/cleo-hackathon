@@ -22,6 +22,8 @@ def scrape_morrisons(product_name:str) -> dict:
         if og_product_name not in str(product_name).lower():
             pass
         else:
+            azs=obj.find_all("a")
+            link = azs[0]["href"]
             product_price = obj.find_all("span", {"class":"fop-price"})[0].text
             product_image = obj.find_all("img",{"class":"fop-img"})
             image_url = "https://groceries.morrisons.com/" + product_image[0]["src"]
@@ -29,8 +31,8 @@ def scrape_morrisons(product_name:str) -> dict:
             items[str(product_name[0].text)] = {
                 "price":float(product_price[1:]),
                 "image":image_url,
-                "store":"Morrisons"
+                "store":"Morrisons",
+                "link":"https://groceries.morrisons.com"+link
             }
     sorted(items, key=lambda x: items[x]['price'])
-    print(items)
     return items

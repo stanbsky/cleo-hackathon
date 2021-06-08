@@ -28,7 +28,7 @@ async def get_prices(request:Request):
     pprint(allPrices)
     to_return = ''
     for val in cheapest[0:5]:
-        to_return += f'Price : {allPrices[val]["price"]}, Store : {allPrices[val]["store"]}, Name: {val}<br>'
+        to_return += f'Name: {val}<br>Price : {allPrices[val]["price"]}, Store : {allPrices[val]["store"]}, <br><a href="{allPrices[val]["link"]}" target="_blank">Click me to go to the product!</a><br>"'
     return {"content":to_return}
-    
+
 uvicorn.run(app)
