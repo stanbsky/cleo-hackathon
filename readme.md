@@ -2,11 +2,22 @@
 
 ## Idea
 
+Every money/budget tracking company right now, tracks, where you spend your money and using that data, helps you to make a budget and set some limitations so you always stay within a limit and do not overspend which is a good thing but it does not help you spend your money smartly. They might give some offers, but that's pretty much it, and by that, you are restricted to use some of their provided portals, but what if the company helps you to spend your money smartly? what if they help you to find the best deals on the market, gives you various information about the product and hopefully even sort those products using cost, or even ratings. If they stick with this ideology then the users will be no longer restricted to the limited atmosphere and can compare various products online with just a simple text, which was also the core principle of Cleo, help people do complicated things with just a text message.
+
 ## Implementation
+
+We started by checking out what the URLs are for the different products, the first product was finding how to search for a product without actually clicking the search boss. The URL looks similar to: `https://morrisons.co.uk/?product=product%20name&sort=ASC` so we could replace \`product%20name\` with the URL encoded version of our product name, We used urllib for the URL encoding instead of implementing in case we forgot to account for edge cases, and we used requests to fetch the data.
+The next problem was parsing the data, we have had plenty of experience before with the module \`BeautifulSoup\` so we threw in the response text from our request above and got to work. In conjunction with chrome dev tools to get the classes and locations of the values, we were requiring it made implementation slightly easier. Each of the parsers is similar to others making it somewhat intuitive for other developers to come in and replicate what we have done for other shopping sites. This was done in the name of open source love 🖤.
+The final problem was putting all the data together, for this we used dictionaries as they are easy to manipulate and the retrieving of values is O(1) time! We used built python functions to sort the data and get it in the format we needed.
+For the frontend, We used plain CSS/HTML/Javascript combined with jinja2. Jinja2 is a templating language that was made for Python. We used XMLHttpRequest to interact with our backend that we wrote in FastAPI (a fast new-ish python framework). Then parse the JSON response the backend passed us and used it for replying with the Bot.
 
 ## Requirements
 
+Please refer to [cleo2/requirements.txt](https://github.com/stanbsky/cleo-hackathon/blob/master/cleo2/requirements.txt)
+
 ## Conclusion
+
+Given this was started about halfway through the hackathon due to the struggles mentioned about the original idea below I think it went very well. I think given what it does the speed is incredible, it is extremely beneficial for anyone that does grocery shopping (most people) and is a great little tool. Given more time I would clean up the frontend as there are some visual issues with it (not major) and add more places to scrape from.
 
 ## Screenshot(s)
 
@@ -28,8 +39,8 @@
 -   cleo2 - this is where our submitted product is, the idea we pivoted to
 -   backend - the original backend folder of the original idea
 -   frontend - the original frontend folder of the original idea
--   custom_data - custom data generated via numpy and pandas
--   dataset - even more data we generated for our dataset via nodeJs
+-   dataset - smartly generated dataset using statistical data to make it realistic using nodeJs
+-   custom_data - even more custom data generated via numpy and pandas
 -   plaid_data - Plaid API data, scraping scripts, jupyter notebooks analysing it
 -   ui - initial ui for the prediction model
 
@@ -90,4 +101,4 @@ When looking for third party data on users credit card debt and related data, we
 -   Stan (stanbsky) - Data science
 -   Morgan (morgs5656) - Data science
 -   Charlie (scxr) - Backend | Data science | Frontend
--   Harsh (harshonyou) Frontend
+-   Harsh (harshonyou) - Frontend
