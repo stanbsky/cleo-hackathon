@@ -1,0 +1,22 @@
+{
+    "override_username": "custom_1",
+    "override_password": {
+        "override_accounts": [
+            {
+                "type": "depository",
+                "subtype": "checking",
+                "inflow_model": {
+                    "type": "monthly-income",
+                    "income_amount": 666,
+                    "payment_day_of_month": "last",
+                    "transaction_name": "PAYCHECK"
+                }
+            },
+            {
+                "type": "credit",
+                "subtype": "credit card",
+                "starting_balance": 500
+            }
+        ]
+    }
+}
