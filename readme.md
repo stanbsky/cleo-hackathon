@@ -101,4 +101,4 @@ When looking for third party data on users credit card debt and related data, we
 -   Stan (stanbsky) - Data science
 -   Morgan (morgs5656) - Data science
 -   Charlie (scxr) - Backend | Data science | Frontend
--   Harsh (harshonyou) - Frontend
+-   Harsh (harshonyou) - Frontend | Data set
