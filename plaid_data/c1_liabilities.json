@@ -1,0 +1,84 @@
+{
+    "accounts": [
+        {
+            "account_id": "dKzd64zgnaFGp1vwlZZnCL1jkepvdoCP84M6W",
+            "balances": {
+                "available": 454.25,
+                "current": 500,
+                "iso_currency_code": "USD",
+                "limit": null,
+                "unofficial_currency_code": null
+            },
+            "mask": "6314",
+            "name": "Checking",
+            "official_name": "Plaid checking",
+            "subtype": "checking",
+            "type": "depository"
+        },
+        {
+            "account_id": "aAqdbxqkWyHQa15Jd66WuzmB3EapKDFRjgaeq",
+            "balances": {
+                "available": 8078.35,
+                "current": 500,
+                "iso_currency_code": "USD",
+                "limit": 8700,
+                "unofficial_currency_code": null
+            },
+            "mask": "7060",
+            "name": "Credit card",
+            "official_name": "Plaid credit card",
+            "subtype": "credit card",
+            "type": "credit"
+        }
+    ],
+    "item": {
+        "available_products": [
+            "assets",
+            "auth",
+            "balance",
+            "identity",
+            "income"
+        ],
+        "billed_products": [
+            "liabilities",
+            "transactions"
+        ],
+        "consent_expiration_time": null,
+        "error": null,
+        "institution_id": "ins_43",
+        "item_id": "wpkAmnk379Hp6LQgyJJ1h4zZr3AdPgfPkJRND",
+        "update_type": "background",
+        "webhook": ""
+    },
+    "liabilities": {
+        "credit": [
+            {
+                "account_id": "aAqdbxqkWyHQa15Jd66WuzmB3EapKDFRjgaeq",
+                "aprs": [
+                    {
+                        "apr_percentage": 12.5,
+                        "apr_type": "purchase_apr",
+                        "balance_subject_to_apr": null,
+                        "interest_charge_amount": null
+                    },
+                    {
+                        "apr_percentage": 27.95,
+                        "apr_type": "cash_apr",
+                        "balance_subject_to_apr": null,
+                        "interest_charge_amount": null
+                    }
+                ],
+                "is_overdue": false,
+                "last_payment_amount": null,
+                "last_payment_date": "2021-05-12",
+                "last_statement_balance": 500,
+                "last_statement_issue_date": "2021-06-07",
+                "minimum_payment_amount": 25,
+                "next_payment_due_date": "2021-07-07"
+            }
+        ],
+        "mortgage": null,
+        "student": null
+    },
+    "request_id": "2W0fz21hd2BdDb5"
+}

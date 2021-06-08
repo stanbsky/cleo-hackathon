@@ -1,0 +1,174 @@
+{
+    "accounts": [
+        {
+            "account_id": "BPz4LknP4DFA7VXnLjnPfgPeMG5e3qS7X1pWM",
+            "balances": {
+                "available": 479.01,
+                "current": 500,
+                "iso_currency_code": "USD",
+                "limit": null,
+                "unofficial_currency_code": null
+            },
+            "mask": "2447",
+            "name": "Cd",
+            "official_name": "Plaid cd",
+            "subtype": "cd",
+            "type": "depository"
+        },
+        {
+            "account_id": "XPlybrZPygFV195Db7Dgc184WEjbBpF59rX6L",
+            "balances": {
+                "available": 400.5,
+                "current": 500,
+                "iso_currency_code": "USD",
+                "limit": null,
+                "unofficial_currency_code": null
+            },
+            "mask": "2626",
+            "name": "Checking",
+            "official_name": "Plaid checking",
+            "subtype": "checking",
+            "type": "depository"
+        },
+        {
+            "account_id": "31eynJ71yGHGQ7pAN1AkFk5vEPpvx7SwQLjry",
+            "balances": {
+                "available": 481.25,
+                "current": 500,
+                "iso_currency_code": "USD",
+                "limit": null,
+                "unofficial_currency_code": null
+            },
+            "mask": "3199",
+            "name": "Prepaid",
+            "official_name": "Plaid prepaid",
+            "subtype": "prepaid",
+            "type": "depository"
+        },
+        {
+            "account_id": "xl3ADKelAgixEdk8Xz84IZwRDmoRBAi9kZz73",
+            "balances": {
+                "available": 11025.59,
+                "current": 500,
+                "iso_currency_code": "USD",
+                "limit": 11700,
+                "unofficial_currency_code": null
+            },
+            "mask": "3225",
+            "name": "Paypal 2",
+            "official_name": "Paypal",
+            "subtype": "paypal",
+            "type": "credit"
+        },
+        {
+            "account_id": "V48bZqe4baiwlQzVyPVWuqQnmvdPB7t6ovVmQ",
+            "balances": {
+                "available": 17484.6,
+                "current": 500,
+                "iso_currency_code": "USD",
+                "limit": 18100,
+                "unofficial_currency_code": null
+            },
+            "mask": "3651",
+            "name": "Credit card",
+            "official_name": "Plaid credit card",
+            "subtype": "credit card",
+            "type": "credit"
+        },
+        {
+            "account_id": "zKdklzZKkafzK9GeMyePhKJbng6bxBSEMKy7B",
+            "balances": {
+                "available": 10097.01,
+                "current": 500,
+                "iso_currency_code": "USD",
+                "limit": 10600,
+                "unofficial_currency_code": null
+            },
+            "mask": "5017",
+            "name": "Paypal",
+            "official_name": "Paypal",
+            "subtype": "paypal",
+            "type": "credit"
+        },
+        {
+            "account_id": "D73PnBm7P1sXQqgzEbzLtog6wRxENKfz7rowL",
+            "balances": {
+                "available": 311.83000000000004,
+                "current": 500,
+                "iso_currency_code": "USD",
+                "limit": null,
+                "unofficial_currency_code": null
+            },
+            "mask": "7320",
+            "name": "Savings",
+            "official_name": "Plaid savings",
+            "subtype": "savings",
+            "type": "depository"
+        },
+        {
+            "account_id": "dEPxMZnExDUERgLZklZzFBLbPydbAXCPlqbM3",
+            "balances": {
+                "available": 10461,
+                "current": 500,
+                "iso_currency_code": "USD",
+                "limit": 11400,
+                "unofficial_currency_code": null
+            },
+            "mask": "8788",
+            "name": "Paypal 3",
+            "official_name": "Paypal",
+            "subtype": "paypal",
+            "type": "credit"
+        }
+    ],
+    "item": {
+        "available_products": [
+            "assets",
+            "auth",
+            "balance",
+            "identity",
+            "income"
+        ],
+        "billed_products": [
+            "liabilities",
+            "transactions"
+        ],
+        "consent_expiration_time": null,
+        "error": null,
+        "institution_id": "ins_43",
+        "item_id": "JLPMwVrLM4C8GkaKDlKosQDrQBQKQBhdWpqr8",
+        "update_type": "background",
+        "webhook": ""
+    },
+    "liabilities": {
+        "credit": [
+            {
+                "account_id": "V48bZqe4baiwlQzVyPVWuqQnmvdPB7t6ovVmQ",
+                "aprs": [
+                    {
+                        "apr_percentage": 12.5,
+                        "apr_type": "purchase_apr",
+                        "balance_subject_to_apr": null,
+                        "interest_charge_amount": null
+                    },
+                    {
+                        "apr_percentage": 27.95,
+                        "apr_type": "cash_apr",
+                        "balance_subject_to_apr": null,
+                        "interest_charge_amount": null
+                    }
+                ],
+                "is_overdue": false,
+                "last_payment_amount": null,
+                "last_payment_date": "2021-05-13",
+                "last_statement_balance": 500,
+                "last_statement_issue_date": "2021-06-08",
+                "minimum_payment_amount": 25,
+                "next_payment_due_date": "2021-07-08"
+            }
+        ],
+        "mortgage": null,
+        "student": null
+    },
+    "request_id": "icbf2zlV6I3eHhE"
+}
