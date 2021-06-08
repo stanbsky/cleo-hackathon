@@ -1,0 +1,126 @@
+{
+  "account": "99374709",
+  "credential": {
+    "name": "Dr. Leonard Littel",
+    "email": "Donavon.Dooley@yahoo.com"    
+  },
+  "account_details": {
+    "accountName": "Personal Loan Account",
+    "routingNumber": "082385895",
+    "mask": "5519",
+    "amount": "714.15",
+    "transactionType": "deposit",
+    "currencyCode": "HKD",
+    "creditCardNumber": "6767-0205-9818-4394",
+    "creditCardCVV": "937",
+    "iban": "FI3500109519002808",
+    "bic": "HMUAPRL1OOO"
+  },
+  "transaction": [
+    {
+      "date": "2005-08-31T23:00:00.000Z",
+      "amount": "1.50",
+      "category": 6
+    },
+    {
+      "date": "2005-09-17T23:00:00.000Z",
+      "amount": "1.09",
+      "category": 5
+    },
+    {
+      "date": "2005-09-23T23:00:00.000Z",
+      "amount": "25.37",
+      "category": 0
+    },
+    {
+      "date": "2005-09-28T23:00:00.000Z",
+      "amount": "9.02",
+      "category": 7
+    },
+    {
+      "date": "2005-08-31T23:00:00.000Z",
+      "amount": "12.04",
+      "category": 1
+    },
+    {
+      "date": "2005-09-14T23:00:00.000Z",
+      "amount": "3.12",
+      "category": 6
+    },
+    {
+      "date": "2005-09-11T23:00:00.000Z",
+      "amount": "3.62",
+      "category": 5
+    },
+    {
+      "date": "2005-09-05T23:00:00.000Z",
+      "amount": "1.67",
+      "category": 2
+    },
+    {
+      "date": "2005-09-02T23:00:00.000Z",
+      "amount": "1.45",
+      "category": 4
+    },
+    {
+      "date": "2005-09-18T23:00:00.000Z",
+      "amount": "1.85",
+      "category": 5
+    },
+    {
+      "date": "2005-09-18T23:00:00.000Z",
+      "amount": "2.08",
+      "category": 5
+    },
+    {
+      "date": "2005-09-10T23:00:00.000Z",
+      "amount": "0.37",
+      "category": 3
+    },
+    {
+      "date": "2005-09-12T23:00:00.000Z",
+      "amount": "12.43",
+      "category": 0
+    },
+    {
+      "date": "2005-09-26T23:00:00.000Z",
+      "amount": "8.08",
+      "category": 1
+    },
+    {
+      "date": "2005-09-20T23:00:00.000Z",
+      "amount": "1.92",
+      "category": 6
+    },
+    {
+      "date": "2005-09-16T23:00:00.000Z",
+      "amount": "2.57",
+      "category": 7
+    },
+    {
+      "date": "2005-09-11T23:00:00.000Z",
+      "amount": "19.64",
+      "category": 0
+    },
+    {
+      "date": "2005-09-13T23:00:00.000Z",
+      "amount": "3.57",
+      "category": 3
+    },
+    {
+      "date": "2005-09-18T23:00:00.000Z",
+      "amount": "6.47",
+      "category": 3
+    },
+    {
+      "date": "2005-09-26T23:00:00.000Z",
+      "amount": "2.13",
+      "category": 5
+    },
+    {
+      "date": "2005-09-19T23:00:00.000Z",
+      "amount": "3.97",
+      "category": 6
+    }
+  ]
+}
